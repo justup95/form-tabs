@@ -1,42 +1,85 @@
 // Container
 .container {
-    max-width: ($containerWidth + $containerPadding) + px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 $containerSidePadding + px;
+  max-width: ($containerWidth + $containerPadding) + px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $containerSidePadding + px;
 
-    @media (max-width: $breakpoint1450) {
-        max-width: 1200px;
-    }
+  @media (max-width: $breakpoint1450) {
+    max-width: 1200px;
+  }
 
-    @media (max-width: $breakpoint992) {
-        max-width: 970px;
-    }
+  @media (max-width: $breakpoint992) {
+    max-width: 970px;
+  }
 
-    @media (max-width: $breakpoint768) {
-        max-width: 740px;
-    }
+  @media (max-width: $breakpoint768) {
+    max-width: 740px;
+  }
 
-    @media (max-width: $breakpoint480) {
-        max-width: none;
-    }
+  @media (max-width: $breakpoint480) {
+    max-width: none;
+  }
 }
 
 // Body Locked
 body {
-    &.locked {
-        overflow: hidden;
-    }
+  font-family: "Author", sans-serif;
+  &.locked {
+    overflow: hidden;
+  }
 }
+
+.title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 56px;
+  color: $mainColor;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: $secondaryColor;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 60px;
+  gap: 40px;
+  background-color: $brandColorRed;
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+  &:hover{
+    background-color: #c6221a;
+    transition: .2s all ease;
+    svg {
+        transform: translateX(10px);
+        transition: .2s all ease;
+    }
+  }
+}
+
+.btn__outline {
+    
+}
+
+
 
 // Animations
 // Fade
 @keyframes fade {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
