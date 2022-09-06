@@ -1,7 +1,7 @@
 // Container & Breakpoints
 @use 'sass:math';
-$containerWidth: 1200;
-$containerPadding: 40;
+$containerWidth: 1560;
+$containerPadding: 20;
 $containerSidePadding: math.div($containerPadding, 2);
 $breakpoint1450: 1449.98 + px;
 $breakpoint992: 991.98 + px;
@@ -19,3 +19,4 @@ $mainColor: #051655;
 $secondaryColor: #747887;
 $brandColorRed: #EB3D35;
 $whiteColor: #ffffff;
+$lightGray: #E5E4E1;

@@ -37,6 +37,15 @@ body {
   color: $mainColor;
 }
 
+.subtitle {
+  display: inline-block;
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 28px;
+  color: $mainColor;
+}
+
 .text {
   font-weight: 400;
   font-size: 20px;
@@ -44,7 +53,8 @@ body {
   color: $secondaryColor;
 }
 
-.btn {
+.btn,
+.btn__outline {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,21 +66,27 @@ body {
   font-weight: 500;
   font-size: 22px;
   line-height: 24px;
-  &:hover{
+  &:hover {
     background-color: #c6221a;
-    transition: .2s all ease;
+    transition: 0.2s all ease;
     svg {
-        transform: translateX(10px);
-        transition: .2s all ease;
+      transform: translateX(10px);
+      transition: 0.2s all ease;
     }
   }
 }
 
 .btn__outline {
-    
+  background-color: transparent;
+  border: 1px solid #e5e4e1;
+  color: $mainColor;
+  &:hover {
+    background-color: $mainColor;
+    opacity: 0.8;
+    color: $whiteColor;
+    transition: 0.3s all ease;
+  }
 }
-
-
 
 // Animations
 // Fade
