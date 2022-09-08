@@ -3,9 +3,6 @@
   padding-bottom: 50px;
 }
 
-.logo {
-}
-
 .form {
   margin-top: 89px;
 }
@@ -55,7 +52,8 @@
   margin-top: 10px;
 }
 
-.form__input {
+.form__input,
+.file__input {
   display: flex;
   position: relative;
   max-width: 460px;

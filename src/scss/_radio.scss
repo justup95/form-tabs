@@ -1,4 +1,5 @@
-.form__radio-buttons {
+.form__radio-buttons,
+.form__checkbox-buttons {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +7,8 @@
     max-width: 1120px;
 }
 
-.form__radio-item {
+.form__radio-item,
+.form__checkbox-item {
   display: flex;
   max-width: 360px;
   width: 100%;
@@ -16,6 +18,7 @@
   position: relative;
   cursor: pointer;
 }
+
 .input__radio {
     display: none;
     width: 100%;
@@ -28,7 +31,8 @@
     }
 }
 
-.input__radio-img {
+.input__radio-img,
+.input__checkbox-img {
     width: 60px;
     height: 60px;
     background-color: $whiteColor;
@@ -43,7 +47,8 @@
     }
 }
 
-.input__radio-text {
+.input__radio-text,
+.input__checkbox-text {
   margin-left: 30px;
   font-weight: 500;
   font-size: 20px;
@@ -72,7 +77,8 @@
         opacity: 0;
     }
 }
-.input__radio-border {
+.input__radio-border,
+.input__checkbox-border {
     position: absolute;
     border: 1px solid $brandColorRed;
     top: 0;

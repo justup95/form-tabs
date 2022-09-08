@@ -1,0 +1,38 @@
+.input__checkbox {
+    display: none;
+    width: 100%;
+    background-color: $whiteColor;
+    &:checked ~ .input__checkbox-fake::after {
+        opacity: 1;
+    }
+    &:checked ~ .input__checkbox-border {
+        opacity: 1;
+    }
+}
+
+.input__checkbox-fake {
+    position: absolute;
+    right: 24px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #E5E4E1;
+    background-color: $whiteColor;
+    top: 50%;
+    transform: translate(0, -50%);
+    &::after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-image: url('../img/checked.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        background-color: $brandColorRed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+}
